@@ -28,9 +28,17 @@ public class Login_StepDefinitions {
     }
     @Then("user on the the library page")
     public void user_on_the_the_library_page() {
-        String expectedUser= "Test Librarian 1";
-        String actualUser = libraryPage.userName1.getText();
-        Assert.assertEquals(expectedUser, actualUser);
+       // String expectedUser= "Test Librarian 1";
+       // String actualUser = libraryPage.userName1.getText();
+      //  Assert.assertEquals(expectedUser, actualUser);
+        String expectedText = "173";
+
+        String actualText = libraryPage.userCount.getText();
+        Assert.assertEquals(expectedText, actualText);
+
+
+        System.out.println("actualText = " + actualText);
+        System.out.println("expectedText = " + expectedText);
 
 
 
@@ -68,9 +76,13 @@ public class Login_StepDefinitions {
     }
     @Then("user is on the library page")
     public void user_is_on_the_library_page() {
-        String expectedText = "Library";
-      String actualText = libraryPage.libraryHeader.getText();
+   //     String expectedText = "Library";
 
+   // String actualText = libraryPage.libraryHeader.getText();
+
+        String expectedText = "173";
+
+        String actualText = libraryPage.userCount.getText();
       Assert.assertEquals(expectedText, actualText);
 
 

@@ -3,7 +3,7 @@ Feature: Librarian and Student login functionalities
 
   Background:For the scenarios in the feature file, user is expected to be on login page
 
-
+  @wip
 @librarian
   Scenario: Librarian login function
   Given user is on the library login page
